@@ -87,8 +87,8 @@
     <main class="flex-1 flex flex-col md:flex-row relative z-10">
         <aside class="w-full md:w-80 bg-white border-r border-gray-200 flex flex-col h-[40vh] md:h-auto shadow-xl z-20">
             <div class="p-3 bg-slate-100 border-b border-gray-200 flex justify-between items-center">
-                <h2 class="font-bold text-slate-800 text-sm uppercase"><i class="fa-solid fa-list-check text-blue-600 mr-1"></i> Trạm quan trắc</h2>
-                <span class="bg-blue-600 text-white text-[10px] px-2 py-1 rounded-full font-bold">8 ĐIỂM</span>
+                <h2 class="font-bold text-slate-800 text-sm uppercase"><i class="fa-solid fa-list-check text-blue-600 mr-1"></i> Vị trí lấy mẫu</h2>
+                <span class="bg-blue-600 text-white text-[10px] px-2 py-1 rounded-full font-bold">10 ĐIỂM</span>
             </div>
             <ul id="sidebar-list" class="flex-1 overflow-y-auto custom-scrollbar divide-y divide-gray-100 p-2">
             </ul>
@@ -115,7 +115,7 @@
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        // Cập nhật mảng pointData với 8 điểm mới từ hình ảnh cung cấp
+        // Cập nhật mảng pointData với 10 điểm mới từ hình ảnh cung cấp
         const pointData = [
             { id: '1', name: 'Điểm đầu kênh', lat: 10.766139, lng: 106.635778, desc: 'Nước vừa ra khỏi cống hộp, chưa qua quá trình tự làm sạch tự nhiên. Dùng làm mốc 0 để đối chiếu độ tăng nồng độ của các điểm phía sau.', method: 'Mẫu đơn (mẫu riêng lẻ), lấy trực tiếp tại các vị trí đã xác định trên bản đồ.', tool: 'Sử dụng gàu lấy mẫu chuyên dụng (bằng nhựa pe hoặc inox) có gắn vật nặng và dây thả được chia vạch đo chiều dài.', img: 'd1.png' },
             { id: '2', name: 'Cầu Tân Hóa (Quận 11)', lat: 10.758972, lng: 106.634250, desc: 'Điểm chốt chặn để đánh giá tổng tải lượng ô nhiễm từ phần thượng nguồn trước khi dòng kênh đi sâu vào vùng lõi mật độ dân số cực cao của Quận 6.', method: 'Mẫu đơn (mẫu riêng lẻ), lấy trực tiếp tại các vị trí đã xác định trên bản đồ.', tool: 'Sử dụng gàu lấy mẫu chuyên dụng (bằng nhựa pe hoặc inox) có gắn vật nặng và dây thả được chia vạch đo chiều dài.', img: 'd2.png' },
